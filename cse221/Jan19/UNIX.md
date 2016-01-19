@@ -57,7 +57,7 @@ multiple copies to be modified
 
 ## Difference nowadays UNIX
 ### iNode
-in papaer
+in paper
 ```
 iNode - >direct pointer
       or - >indirect pointer
