@@ -1,13 +1,23 @@
-Since Mac OS X does not 10.11 `El Capitan`  does not support haskell cabal yet. https://github.com/haskell/cabal/issues/2653
+Since Mac OS X does not 10.11 `El Capitan`  does not support haskell `cabal` yet. https://github.com/haskell/cabal/issues/2653
 
 (EI Caption has some rootless new feature. )
+You can try to disable it by
 
-We use linux to build our IDE here.
+- In recovery mode. `csrutil`
+- Or, `sudo nvram boot-args="rootless=0";sudo reboot`
+
+However, I fail in both way.
+
+Of course, a workaroud is to use `homebrew` to do all the thing. Someone made it in this way.
+
+
+I choose to use linux to build our IDE here.
 
 ## Install ATOM
 https://atom.io/
 
 ##  Install Haskell for ubuntu
+If you use other sys, use this [link](https://www.haskell.org/downloads)
 ```
 sudo apt-get update
 sudo apt-get install -y software-properties-common
@@ -20,7 +30,7 @@ EOF
 export PATH=~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH
 ```
 
-The last line to enable to directly in your current shell. If you use some other shell, like zsh, you can run the last line every time you run atom. OR add to you shell environment.
+The last line add PATH to your current shell. If you use some other shells, like zsh, you can run the last line every time before you run atom. Or add to your shell environment path.
 
 ## Install hlint
 ### If you can use cabal, good idea
@@ -29,14 +39,16 @@ cabal install happy
 cabal install hlint
 cabal install ghc-mod
 ```
-- happy is a dependency for hlni
-- hlint is a lint for haskell
-- ghc-mod is for a Atom package, install it , it is good for you
+- `happy`  is a dependency for hlnit
+- `hlint` is a lint for haskell
+- `ghc-mod` is for Atom package. Install it , it is good for you
 
 If cabal tells you cannot locate hlint, then `  cabal update `
 
-### if you want to stack, bad idea
-If you want to use ` stack `, I recommend you just give up.  `stack` seems to have problem here. Of course, I know someone success use `stack` here. If you install the hlint success fully ,remembet to run atom in stack environment.
+### If you want to use stack, bad idea
+If you want to use ` stack `, I recommend you just give up.  `stack` seems to have problems here.
+
+ I know someone success use `stack`(use homebrew to install) to install `hlint`. If you install the hlint in this way successfully ,remember to run atom in stack environment.
 ```
 stack exec atom .
 ```
@@ -46,7 +58,7 @@ stack exec atom.cmd .
 ```
 
 ## packages for haskell in atom
-you can install package by
+you can install packages by
 ```
 apm install package
 ```
@@ -54,7 +66,7 @@ or, in graphic mode
 ```
 open Atom
 open setting (command + ,)
-b```
+```
 | install following packages |
 |:---------------------------|
 | autocomplete-haskell       |
