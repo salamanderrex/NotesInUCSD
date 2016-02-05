@@ -38,6 +38,7 @@ The last line add PATH to your current shell. If you use some other shells, like
 cabal install happy
 cabal install hlint
 cabal install ghc-mod
+cabal install hdevtools
 ```
 - `happy`  is a dependency for hlnit
 - `hlint` is a lint for haskell
@@ -69,12 +70,13 @@ open setting (command + ,)
 ```
 | install following packages |
 |:---------------------------|
+| language-haskell           |
 | autocomplete-haskell       |
 | haskell-ghc-mod            |
 | hover-tooltips-hdevtools   |
 | linter                     |
 | linter-hdevtools           |
-| linter-hlinter             |
+| linter-hlint               |
 
 ## End
 Ok, now you are all set. Enjoy the homework. :smiling_imp:
