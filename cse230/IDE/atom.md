@@ -38,6 +38,7 @@ The last line add PATH to your current shell. If you use some other shells, like
 cabal install happy
 cabal install hlint
 cabal install ghc-mod
+cabal install hdevtools
 ```
 - `happy`  is a dependency for hlnit
 - `hlint` is a lint for haskell
