@@ -69,12 +69,13 @@ open setting (command + ,)
 ```
 | install following packages |
 |:---------------------------|
+| language-haskell           |
 | autocomplete-haskell       |
 | haskell-ghc-mod            |
 | hover-tooltips-hdevtools   |
 | linter                     |
 | linter-hdevtools           |
-| linter-hlinter             |
+| linter-hlint               |
 
 ## End
 Ok, now you are all set. Enjoy the homework. :smiling_imp:
