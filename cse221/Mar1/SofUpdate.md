@@ -1,0 +1,1 @@
+http://www.scs.stanford.edu/nyu/02fa/notes/l10d.txt
